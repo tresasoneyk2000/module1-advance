@@ -1,0 +1,10 @@
+package com.lambda;
+
+public class HelloLambda {
+
+	public String hello()
+{
+		return "hello world";
+		
+}
+	}
