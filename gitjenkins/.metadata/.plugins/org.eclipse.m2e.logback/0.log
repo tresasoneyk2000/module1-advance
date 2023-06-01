@@ -1,0 +1,52 @@
+2023-05-26 17:52:26,551 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-05-26 17:55:40,362 [Worker-5: Creating project "githubjenkins"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ust.gitjenkins:githubjenkins:0.0.1-SNAPSHOT @ D:\gitjenkins\githubjenkins\pom.xml.
+2023-05-26 17:55:41,186 [Worker-5: Creating project "githubjenkins"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /githubjenkins/src/main/java
+2023-05-26 17:55:41,188 [Worker-5: Creating project "githubjenkins"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /githubjenkins/src/main/resources
+2023-05-26 17:55:41,190 [Worker-5: Creating project "githubjenkins"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /githubjenkins/src/test/java
+2023-05-26 17:55:41,191 [Worker-5: Creating project "githubjenkins"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /githubjenkins/src/test/resources
+2023-05-26 17:55:42,825 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-26 17:55:42,831 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-26 17:55:42,835 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-26 17:55:42,836 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-26 18:02:24,879 [Worker-14: Creating project "jenkingithub"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ustjen:jenkingithub:0.0.1-SNAPSHOT @ D:\gitjenkins\jenkingithub\pom.xml.
+2023-05-26 18:02:24,942 [Worker-14: Creating project "jenkingithub"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jenkingithub/src/main/java
+2023-05-26 18:02:24,943 [Worker-14: Creating project "jenkingithub"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jenkingithub/src/main/resources
+2023-05-26 18:02:24,943 [Worker-14: Creating project "jenkingithub"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jenkingithub/src/test/java
+2023-05-26 18:02:24,944 [Worker-14: Creating project "jenkingithub"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jenkingithub/src/test/resources
+2023-05-26 18:02:25,183 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-26 18:02:25,185 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-26 18:02:25,187 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-26 18:02:25,188 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-26 18:07:26,503 [Worker-18: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - File not found: D:\gitjenkins\githubjenkins\pom.xml.
+org.eclipse.core.internal.resources.ResourceException: File not found: D:\gitjenkins\githubjenkins\pom.xml.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:572)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:474)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:360)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:313)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:149)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:196)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: File not found: D:\gitjenkins\githubjenkins\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 27 common frames omitted
