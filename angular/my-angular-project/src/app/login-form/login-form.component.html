@@ -1,0 +1,13 @@
+<form (submit)="login()">
+<div>
+    <label for="username">Username:</label>
+    <input id="username" type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+    <div class="error-message" *ngIf="usernameInvalid">Username is required.</div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input id="password" type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+    <div class="error-message" *ngIf="passwordInvalid">Password is required.</div>
+  </div>
+  <button type="submit">Login</button>
+</form>

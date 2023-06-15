@@ -1,0 +1,42 @@
+
+
+
+<!-- <nav><div><button class="btn btn-warning"><a routerLink="/create">Create</a></button></div></nav> -->
+
+<style>
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    th, td {
+      background-color: #ccaad6;
+    }
+    table{
+        width: 100%;
+    }
+    </style>
+<div>
+    <h2>Products List api.2.0</h2>
+    <table border="2" align="center" >
+        <thead>
+            <th>Product id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tr *ngFor="let product of products">
+        <td>{{product.productId}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.qty}}</td>
+        <td><button class="btn btn-warning"> <a [routerLink]="'/update/' + product.productId">update</a></button></td>
+        <td><button class="btn btn-danger" *ngIf="product.productId != undefined" (click)="deletebyid(product.productId)"> delete</button></td>
+    </tr>
+    </table>
+</div>
+
+

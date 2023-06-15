@@ -50,8 +50,7 @@ public class MessagingConfig {
 	@Bean
 	public AmqpTemplate template(ConnectionFactory connectionFactory) {// @Bean is java configuration  it is in container. connectionfactory is autoinjected
 		
-		final RabbitTemplate template=
-				new RabbitTemplate(connectionFactory);
+		final RabbitTemplate template=new RabbitTemplate(connectionFactory);
 		template.setMessageConverter(converter());
 		return template;
 		

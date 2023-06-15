@@ -26,7 +26,7 @@ public class PurchaseOrderPublisher {//publisher has dependency on template so t
 	@Value("${ust.rabbitmq.routingkey")
 	String routingkey;
 	@Value("${ust.rabbitmq.queue")
-	 String queueName;
+	 String queue;
 	@Value("${ust.rabbitmq.exchange")
 	String exchange;
 	
@@ -36,8 +36,7 @@ public class PurchaseOrderPublisher {//publisher has dependency on template so t
 		order.setOrderId(UUID.randomUUID().toString());
 		
 		
-		OrderStatus orderStatus=new
-				OrderStatus(order,"ACCEPTED","OREDER PLACED SUCCESFULLY BY" + customerName);
+		OrderStatus orderStatus=new OrderStatus(order,"ACCEPTED","OREDER PLACED SUCCESFULLY BY" + customerName);
 		template.convertAndSend(exchange,routingkey,orderStatus);
 		return "Sucesss";
 	

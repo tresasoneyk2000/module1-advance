@@ -1,0 +1,10 @@
+<h3>PARENT COMPONENT</h3>
+
+<button (click)="reset()">reset</button>
+<h4>counting:{{count}}</h4>
+<button (click)="senddatatochild()">send</button>
+
+<h3>from child: {{message1}}</h3>
+<app-child1 (messagechild)="messagefromchild($event)"></app-child1>
+
+<app-child [message]="messagefromparent" [count1]="count" (counting)="addcount($event)"></app-child>

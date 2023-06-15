@@ -12,9 +12,9 @@ public class PurchaseOrderConsumer {
 	
 	
 	@Value("${ust.rabbitmq.queue}")
-	 String ust_queue;
+	 String queueName;
 	
-	@RabbitListener(queues="ust_queue")// queue is like group in whatsapp
+	@RabbitListener(queues="ust_queue")// queue is like group in whatsapp listen from queue
 	public void consumeMessageFromQueue(OrderStatus orderStatus) {
 		System.out.println("Message recieved from queue : "+ orderStatus);
 		
